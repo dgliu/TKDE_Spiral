@@ -1,7 +1,9 @@
 %% Experimental code of Section 2
 %% Figure 2
+spiral_example
+%% Figure 3
 dataName = {'Books','Clothes','Electronics','Movies','Epinion','Ciao','Eachmovie','Movielens20m'};
-fileAddress = 'F:\Matlab_workspace\TKDE19_Spiral\Empirical study\';
+fileAddress = 'F:\Matlab_workspace\TKDE_Spiral\Empirical study\';
 tic
 for i = 1:length(dataName)
     % Load data and calculate cache variables
@@ -182,12 +184,11 @@ for i = 1:length(dataName)
     set(gca,'FontName','Arial Rounded MT Bold','FontSize',20,'linewidth',3);
     axis tight 
     saveas(gcf,[fileAddress,dataName{i},'_opinion'],'epsc');
-    clf;
 end
 
 %% Table 3
 dataName = {'Books','Clothes','Electronics','Movies','Epinion','Ciao','Eachmovie','Movielens20m'};
-fileAddress = 'F:\Matlab_workspace\TKDE19_Spiral\Empirical study\';
+fileAddress = 'F:\Matlab_workspace\TKDE_Spiral\Empirical study\';
 pLevel = [0.01,0.05,0.1];
 numericalOut = zeros(8,6);
 numericalIdx = cell(8,3);
